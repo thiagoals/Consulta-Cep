@@ -17,7 +17,7 @@ public class GetCepController {
 	
 	@RequestMapping("/getCep/{cep}")
 	public ResponseEntity<?> getCep(@PathVariable String cep){
-		return cepService.getCep(cep);
+		return cepService.getAddressByCep(cep);
 	}
 
 }
