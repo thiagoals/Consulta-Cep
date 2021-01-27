@@ -1,5 +1,6 @@
 package com.example.demo.CepManagement.GetCep;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +16,7 @@ public class GetCepController {
 	
 	
 	@RequestMapping("/getCep/{cep}")
-	public CepResponse getCep(@PathVariable String cep) {
+	public ResponseEntity<?> getCep(@PathVariable String cep){
 		return cepService.getCep(cep);
 	}
 
