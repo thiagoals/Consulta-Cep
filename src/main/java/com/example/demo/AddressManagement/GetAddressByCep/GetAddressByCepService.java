@@ -1,4 +1,4 @@
-package com.example.demo.CepManagement.GetCep;
+package com.example.demo.AddressManagement.GetAddressByCep;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name="cepService", url="https://viacep.com.br/ws", value="cepService")
-public interface CepService {
+public interface GetAddressByCepService {
 	
 	@GetMapping("/{cep}/json/")
-	ResponseEntity<CepResponse> getAddressByCep(@PathVariable("cep") String cep);
+	Address getAddressByCep(@PathVariable("cep") String cep);
 }
