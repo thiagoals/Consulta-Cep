@@ -1,13 +1,13 @@
 version: "3.3"
 
 networks:
-  cep-api:
-    name: cep-api
+  cep:
+    name: cepapi
 
 services:
-  cepapi:
-    container_name: cep-api
+  cep:
+    container_name: cep
     ports:
       - "8085:8080"
     networks:
-      - cep-api
+      - cepapi
