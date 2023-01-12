@@ -5,7 +5,7 @@ services:
       context: ./
     container_name: cep
     ports:
-      - "8091:8000"
+      - "8091:8080"
     networks:
       - cepapi
       
