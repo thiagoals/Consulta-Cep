@@ -1,9 +1,15 @@
 version: "3.3"
 
+networks:
+  api:
+    name: cepapi
+
 services:
   cep:
     build:
       context: ./
     container_name: cep
     ports:
-      - "8085:8080"
+      - "8085:8000"
+    networks:
+      - cepapi
