@@ -1,8 +1,4 @@
-version: "3.3"
-
-networks:
-  cep:
-    name: cepapi
+version: "3.7"
 
 services:
   cep:
