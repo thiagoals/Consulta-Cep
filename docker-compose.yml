@@ -6,7 +6,6 @@ services:
     container_name: cep
     ports:
       - "8091:8000"
-    network_mode: 'host'
     networks:
       - cepapi
       
