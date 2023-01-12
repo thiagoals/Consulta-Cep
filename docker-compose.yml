@@ -1,9 +1,4 @@
 version: "3.3"
-
-networks:
-  api:
-    name: cepapi
-
 services:
   cep:
     build:
@@ -13,3 +8,7 @@ services:
       - "8085:8000"
     networks:
       - cepapi
+      
+networks:
+  cepapi:
+    name: cepapi
