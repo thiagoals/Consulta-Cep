@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage ('Docker compose'){
 			steps{
-				sh 'cd Consulta-Cep && docker compose up -d'
+				sh 'cd Consulta-Cep && docker compose up --build -d'
 			}
 		}
 	}
